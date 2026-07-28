@@ -267,7 +267,10 @@
     <script>
         
     
-    async function fetchGitHubReleases() {
+    // আপনার GitHub Personal Access Token
+const GITHUB_TOKEN = "Ghp_qzuJA09YkwPKtAE21kuMDjsG8hOJPm4J2Tzb"; 
+
+async function fetchGitHubReleases() {
     const downloadButtons = document.querySelectorAll('.app-download-btn');
     const versionElements = document.querySelectorAll('.app-version');
 
@@ -280,21 +283,27 @@
         );
 
         try {
-            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/releases/latest`);
+            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/releases/latest`, {
+                headers: {
+                    // API Rate Limit ৫০ থেকে ৫,০০০ পর্যন্ত বাড়িয়ে নেওয়ার জন্য টোকেন হেডার
+                    'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                    'Accept': 'application/vnd.github.v3+json'
+                }
+            });
+
             if (!response.ok) throw new Error('Release fetch failed');
 
             const data = await response.json();
 
-            // ভার্সন ট্যাগ আপডেট (যেমন: Latest: v1.0.0)
+            // ভার্সন আপডেট
             if (versionEl && data.tag_name) {
                 versionEl.innerText = `Latest: ${data.tag_name}`;
             }
 
-            // সরাসরি .apk ফাইল খোঁজা
+            // সরাসরি .apk ফাইল খুঁজে লিংক সেট করা
             const apkAsset = data.assets && data.assets.find(asset => asset.name.toLowerCase().endsWith('.apk'));
 
             if (apkAsset) {
-                // কেবল APK ফাইল পেলেই ডাউনলোড বাটন অ্যাক্টিভ হবে
                 btn.href = apkAsset.browser_download_url;
                 btn.classList.remove('opacity-50', 'cursor-not-allowed', 'pointer-events-none');
             } else {
@@ -308,8 +317,7 @@
 }
 
 document.addEventListener('DOMContentLoaded', fetchGitHubReleases);
-        
-    
+
     
     
     </script>
