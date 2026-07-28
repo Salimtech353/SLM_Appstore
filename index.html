@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Android App Showcase</title>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center text-xl font-bold">
+                    <i class="fa-brands fa-android text-white"></i>
+                </div>
+                <span class="font-bold text-lg tracking-wide text-white">AppShowcase</span>
+            </div>
+            <a href="#apps" class="text-sm font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-lg transition border border-slate-700">
+                অ্যাপস দেখুন
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-4xl mx-auto text-center py-16 px-4">
+        <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400 bg-indigo-950/60 border border-indigo-800/50 px-3 py-1 rounded-full">
+            Android Applications
+        </span>
+        <h1 class="text-4xl md:text-5xl font-extrabold mt-4 text-white tracking-tight">
+            আমার তৈরি অ্যান্ড্রোয়েড অ্যাপ্লিকেশনসমূহ
+        </h1>
+        <p class="text-slate-400 text-base md:text-lg mt-4 max-w-2xl mx-auto">
+            নিচের অ্যাপগুলোর ফিচার দেখুন এবং সরাসরি GitHub থেকে সর্বদা সর্বশেষ আপডেটেড APK ফাইলটি ইনস্টল করে নিন।
+        </p>
+    </header>
+
+    <!-- Apps Container -->
+    <main id="apps" class="max-w-6xl mx-auto px-4 pb-20 space-y-10">
+
+        <!-- APP 1: Prayer -->
+        <article class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-emerald-600/20 border border-emerald-500/30 rounded-2xl flex items-center justify-center text-emerald-400 text-2xl shadow-md">
+                            <i class="fa-solid fa-mosque"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">Prayer App</h2>
+                            <p class="text-xs text-emerald-400 font-mono mt-0.5 app-version" data-owner="Salimtech353" data-repo="Prayer">
+                                Checking latest version...
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        দৈনন্দিন সালাতের সঠিক সময়সূচী, কিবলা দিকনির্দেশনা, প্রয়োজনীয় দোয়া-আমল ছাড়াও এতে রয়েছে সম্পূর্ণ অডিও কুরআন ও বিশুদ্ধ হাদিস সংকলন।
+                    </p>
+
+                    <!-- Key Features -->
+                    <div>
+                        <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">মূল ফিচারসমূহ:</h3>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-slate-300">
+                            <li class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                                <span>সঠিক নামাজের সময়সূচী ও কিবলা কম্পাস</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                                <span>১০ জন বিখ্যাত ক্বারীর অডিও কুরআন তিলাওয়াত</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                                <span>আরবি, বাংলা ও ইংরেজি অনুবাদসহ তিলাওয়াত</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                                <span>সহীহ হাদিস (বুখারী, মুসলিম, আবু দাউদ, তিরমিযী, ইবনে মাজাহ)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                                <span>আরবি মূল পাঠ্য ও বাংলা অনুবাদ</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                                <span>অফলাইন সাপোর্ট ও সুন্দর ডার্ক UI</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-4 items-center">
+                        <a href="#" 
+                           class="app-download-btn inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-5 py-2.5 rounded-xl transition shadow-lg shadow-emerald-600/20 opacity-50 cursor-not-allowed pointer-events-none" 
+                           data-owner="Salimtech353" data-repo="Prayer">
+                            <i class="fa-solid fa-download"></i>
+                            <span>APK ডাউনলোড করুন</span>
+                        </a>
+                        <span class="text-xs text-slate-500 font-mono">GitHub Auto-Sync</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">স্ক্রিনশট:</h3>
+                    <div class="flex space-x-3 overflow-x-auto pb-2 scrollbar-thin">
+                        <img src="https://via.placeholder.com/180x360/1e293b/ffffff?text=Prayer+Screen+1" alt="Screenshot 1" class="w-32 rounded-xl border border-slate-700 flex-shrink-0">
+                        <img src="https://via.placeholder.com/180x360/1e293b/ffffff?text=Prayer+Screen+2" alt="Screenshot 2" class="w-32 rounded-xl border border-slate-700 flex-shrink-0">
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- APP 2: LiveTV71 -->
+        <article class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-indigo-600/20 border border-indigo-500/30 rounded-2xl flex items-center justify-center text-indigo-400 text-2xl shadow-md">
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">Live TV 71</h2>
+                            <p class="text-xs text-indigo-400 font-mono mt-0.5 app-version" data-owner="Salimtech353" data-repo="LiveTV71">
+                                Checking latest version...
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        সরাসরি মোবাইল থেকে টিভি চ্যানেল ও লাইভ স্ট্রিম উপভোগ করার জন্য একটি আধুনিক মিডিয়া প্লেয়ার অ্যাপ্লিকেশন।
+                    </p>
+
+                    <div>
+                        <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">মূল ফিচারসমূহ:</h3>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-300">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i><span>স্মুথ ও ফাস্ট বাফারিং</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i><span>কাস্টম নেভিগেশন ড্রয়ার</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i><span>সহজ ক্যাটাগরি ফিল্টার</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-4 items-center">
+                        <a href="#" 
+                           class="app-download-btn inline-flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-5 py-2.5 rounded-xl transition shadow-lg shadow-indigo-600/20 opacity-50 cursor-not-allowed pointer-events-none" 
+                           data-owner="Salimtech353" data-repo="LiveTV71">
+                            <i class="fa-solid fa-download"></i>
+                            <span>APK ডাউনলোড করুন</span>
+                        </a>
+                        <span class="text-xs text-slate-500 font-mono">GitHub Auto-Sync</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">স্ক্রিনশট:</h3>
+                    <div class="flex space-x-3 overflow-x-auto pb-2">
+                        <img src="https://via.placeholder.com/180x360/1e293b/ffffff?text=TV+Screen+1" alt="Screenshot 1" class="w-32 rounded-xl border border-slate-700 flex-shrink-0">
+                        <img src="https://via.placeholder.com/180x360/1e293b/ffffff?text=TV+Screen+2" alt="Screenshot 2" class="w-32 rounded-xl border border-slate-700 flex-shrink-0">
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- APP 3: MultiCalendar -->
+        <article class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-amber-600/20 border border-amber-500/30 rounded-2xl flex items-center justify-center text-amber-400 text-2xl shadow-md">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">Multi Calendar</h2>
+                            <p class="text-xs text-amber-400 font-mono mt-0.5 app-version" data-owner="Salimbd71" data-repo="MultiCalendar">
+                                Checking latest version...
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        ইংরেজি, বাংলা এবং হিজরি ক্যালেন্ডার একত্রে দেখার একটি অল-ইন-ওয়ান মাল্টি-ফাংশনাল ক্যালেন্ডার অ্যাপ।
+                    </p>
+
+                    <div>
+                        <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">মূল ফিচারসমূহ:</h3>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-300">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-amber-400 text-xs"></i><span>বাংলা, ইংরেজি ও হিজরি সেশন</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-amber-400 text-xs"></i><span>মাসভিত্তিক কাস্টম ব্যাকগ্রাউন্ড</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-amber-400 text-xs"></i><span>সরকারি ছুটির তালিকা</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-4 items-center">
+                        <a href="#" 
+                           class="app-download-btn inline-flex items-center space-x-2 bg-amber-600 hover:bg-amber-500 text-white font-medium px-5 py-2.5 rounded-xl transition shadow-lg shadow-amber-600/20 opacity-50 cursor-not-allowed pointer-events-none" 
+                           data-owner="Salimbd71" data-repo="MultiCalendar">
+                            <i class="fa-solid fa-download"></i>
+                            <span>APK ডাউনলোড করুন</span>
+                        </a>
+                        <span class="text-xs text-slate-500 font-mono">GitHub Auto-Sync</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">স্ক্রিনশট:</h3>
+                    <div class="flex space-x-3 overflow-x-auto pb-2">
+                        <img src="https://via.placeholder.com/180x360/1e293b/ffffff?text=Calendar+1" alt="Screenshot 1" class="w-32 rounded-xl border border-slate-700 flex-shrink-0">
+                        <img src="https://via.placeholder.com/180x360/1e293b/ffffff?text=Calendar+2" alt="Screenshot 2" class="w-32 rounded-xl border border-slate-700 flex-shrink-0">
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 text-center py-8 text-xs text-slate-500">
+        <p>© 2026 Developer Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Dynamic Fetching Logic (No Fallback Hardcoded APKs) -->
+    <script>
+        async function fetchGitHubReleases() {
+            const downloadButtons = document.querySelectorAll('.app-download-btn');
+            const versionElements = document.querySelectorAll('.app-version');
+
+            downloadButtons.forEach(async (btn) => {
+                const owner = btn.getAttribute('data-owner');
+                const repo = btn.getAttribute('data-repo');
+                
+                const versionEl = Array.from(versionElements).find(
+                    el => el.getAttribute('data-owner') === owner && el.getAttribute('data-repo') === repo
+                );
+
+                try {
+                    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/releases/latest`);
+                    if (!response.ok) throw new Error('Release fetch failed');
+
+                    const data = await response.json();
+
+                    // Update version tag automatically
+                    if (versionEl && data.tag_name) {
+                        versionEl.innerText = `Latest: ${data.tag_name}`;
+                    }
+
+                    // Find latest .apk file link dynamically
+                    const apkAsset = data.assets && data.assets.find(asset => asset.name.endsWith('.apk'));
+
+                    if (apkAsset) {
+                        btn.href = apkAsset.browser_download_url;
+                        btn.classList.remove('opacity-50', 'cursor-not-allowed', 'pointer-events-none');
+                    } else if (data.html_url) {
+                        // Fallback to release page if no direct APK binary is attached
+                        btn.href = data.html_url;
+                        btn.innerHTML = `<i class="fa-brands fa-github"></i> <span>Releases পেজ খুলুন</span>`;
+                        btn.classList.remove('opacity-50', 'cursor-not-allowed', 'pointer-events-none');
+                    }
+                } catch (error) {
+                    console.error(`Could not fetch GitHub Release for ${repo}:`, error);
+                    if (versionEl) {
+                        versionEl.innerText = 'Releases Page';
+                    }
+                    // Redirect button to the repository releases page if API fails
+                    btn.href = `https://github.com/${owner}/${repo}/releases`;
+                    btn.innerHTML = `<i class="fa-brands fa-github"></i> <span>GitHub Releases</span>`;
+                    btn.classList.remove('opacity-50', 'cursor-not-allowed', 'pointer-events-none');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchGitHubReleases);
+    </script>
+</body>
+</html>
